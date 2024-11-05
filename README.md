@@ -1,5 +1,6 @@
 # <span style="color:blue;">C</span>Mi<span style="color:blue;">N</span>et: <span style="color:blue;">C</span>onsensus <span style="color:blue;">M</span>icrobiome <span style="color:blue;">N</span>etwork <span style="color:blue;">A</span>lgorithm
 <img src="image/logo.png" style="width:40%;" align=right>
+
 ## Description
 CMiNet is an R package designed to generate consensus microbiome networks by integrating results from multiple network construction algorithms. This tool is specifically tailored for microbiome data, where capturing the intricate relationships between microbial taxa is essential to understanding complex biological systems and their impacts on health and disease.
 
