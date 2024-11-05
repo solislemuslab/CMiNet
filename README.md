@@ -8,9 +8,10 @@ The package employs a range of established algorithms, including Pearson and Spe
 ## Table of Contents
 - [Methods Included in CMiNet](#methods-included-in-cminet)
 - [Installation](#installation)
+- [Running CMiNet](#running)
 
 ## Methods Included in CMiNet
-Ten Algorithms which are applied in CMiNet:
+Algorithms Applied in CMiNet:
 - Pearson coefficient (cor() from stats package)
 - Spearman coefficient (cor() from stats package)
 - Biweight Midcorrelation bicor() from WGCNA package
@@ -18,10 +19,23 @@ Ten Algorithms which are applied in CMiNet:
 - CCLasso ([R code on GitHub](https://github.com/huayingfang/CCLasso/tree/master))
 - SpiecEasi ([SpiecEasi package](https://github.com/zdk123/SpiecEasi))
 - SPRING ([SPRING package](https://github.com/GraceYoon/SPRING))
+- CMI (Conditional Mutual Information-Based Microbiome Network Construction)
 - gCoda ([R code on GitHub](https://github.com/huayingfang/gCoda))
 
 ## Installation
 # Required packages
+```bash
 install.packages("devtools")
 devtools::install_github("rosaaghdam/CMiNet")
+```
+
+## Running CMiNet
+We use the American Gut data from [SpiecEasi package](https://github.com/GraceYoon/SPRING) to run CMiNet algorithm to construct consensus microbiome network. 
+
+First, load CMiNet and the American Gut Project data (included with the [SpiecEasi package](https://github.com/GraceYoon/SPRING), which is automatically loaded alongside CMiNet).
+```bash
+library(CMiNet)
+data("amgut1.filt")
+```
+
 
