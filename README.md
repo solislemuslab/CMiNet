@@ -87,7 +87,7 @@ result <- CMiNet(
   cclasso = list(enabled = TRUE,params=cclasso_params)
 )
 ```
-## 2. **visualization** Function:
+## 2. **process_and_visualize_network** Function:
 We plotted weighted_network resulted by CMiNet Function based on 4 thresolds:
 
 ```bash
@@ -100,6 +100,20 @@ node_colors <- c("white", "lightyellow",  "lightgreen","lightblue")  # Node colo
 edge_colors <- c("blue", "#9491D9", "#332288", "purple")  # Edge colors for each threshold
 process_and_visualize_network(weighted_network, taxa_names, thresholds, show_labels, node_colors, edge_colors)
 ```
+## 3. **plot_hamming_distances** Function
+```bash
+plot_hamming_distances("Binary_Network", top_n_pairs = 10, output_filename = "hamming_distances_plot.jpeg")
+```
+## 4. **plot_network** Function
+score = 7
+WN = result$weighted_network
+taxa_names <- taxa_name[, 2]
+rownames(WN) = colnames(WN)=taxa_names
+network_final <- ifelse(WN > score, 1, 0)
+network_final[lower.tri(network_final)] <- 0  # Only upper triangle will have non-zero values
+sum(network_final)
+plot_network(network_final, node_color = "skyblue", edge_color = "grey", label_color = "black")
+
 
 
 
