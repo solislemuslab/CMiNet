@@ -75,10 +75,10 @@ We design the package that you can change the paramters of all algorithms based 
 - Parameters:
   - data: The input microbiome abundance matrix, where rows represent samples and columns represent taxa.
   - quantitative (default = TRUE): Set to TRUE if the data contains quantitative abundance counts; set to FALSE otherwise.
-  - TT: The threshold value used for threshold-dependent algorithms (), set to the 0.95 quantile by default to promote sparsity in the consensus network.
-- Algorithm-Specific Parameters:
-  - pearson, spearman, bicor: Boolean flags to enable these correlation-based methods. When set to TRUE, the algorithm runs on the data; when set to FALSE, it is excluded from the analysis.
-  - sparcc, spiecEasi_mb, spiecEasi_glasso, spring, gcoda, c_MI, cclasso: Lists of parameters for each algorithm, allowing customization of settings such as number of cores (ncores), threshold values (lambda.min.ratio), and other algorithm-specific configurations. Setting the enabled parameter to TRUE for an algorithm will include it in the consensus network construction, while setting it to FALSE will skip the algorithm, allowing users to select a subset of methods for analysis.
+  - TT: The threshold value used for threshold-dependent algorithms (pearson,spearman,bicor,sparcc,and cclasso), set to the 0.95 quantile by default to promote sparsity in the consensus network.
+  - Algorithm-Specific Parameters:
+    - pearson, spearman, bicor: Boolean flags to enable these correlation-based methods. When set to TRUE, the algorithm runs on the data; when set to FALSE, it is excluded from the analysis.
+    - sparcc, spiecEasi_mb, spiecEasi_glasso, spring, gcoda, c_MI, cclasso: Lists of parameters for each algorithm, allowing customization of settings such as number of cores (ncores), threshold values (lambda.min.ratio), and other algorithm-specific configurations. Setting the enabled parameter to TRUE for an algorithm will include it in the consensus network construction, while setting it to FALSE will skip the algorithm, allowing users to select a subset of methods for analysis.
 - Returns: A list containing:
   - weighted_network: A weighted network matrix representing the consensus network.
   - edge_list: A matrix with three columns—first and second columns indicate node IDs, and the third column shows the edge weight values.
