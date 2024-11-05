@@ -5,7 +5,7 @@
 CMiNet is an R package designed to generate consensus microbiome networks by integrating results from multiple network construction algorithms. This tool is specifically tailored for microbiome data, where capturing the intricate relationships between microbial taxa is essential to understanding complex biological systems and their impacts on health and disease.
 
 The package employs a range of established algorithms, including Pearson and Spearman correlation, Biweight midcorrelation, Sparse Correlations for Compositional data (SparCC), Sparse InversE Covariance estimation for Ecological Association and Statistical Inference (SpiecEasi), Semi-Parametric Rank-based Correlation and Partial Correlation Estimation (SPRING), Generalized Co-Occurrence Differential Abundance analysis (GCODA), Correlation Inference for Compositional Data through Lasso (CCLasso), and a novel algorithm based on conditional mutual information. These algorithms construct individual microbial association networks, which CMiNet then combines into a single, weighted consensus network. By leveraging the strengths of each method, CMiNet provides a comprehensive and reliable representation of microbial interactions.
-<img src="image/CMiNet-Page-2.jpg" style="width:50%;">
+<img src="image/CMiNet-Page-2.jpg" style="width:50%;" align=right>
 
 ## Table of Contents
 - [Methods Included in CMiNet](#methods-included-in-cminet)
@@ -104,7 +104,7 @@ process_and_visualize_network(weighted_network, taxa_names, thresholds, show_lab
 ```bash
 plot_hamming_distances("Binary_Network", top_n_pairs = 10, output_filename = "hamming_distances_plot.jpeg")
 ```
-<img src="image/hamming_distances_plot.jpeg" style="width:30%;" align=right>
+<img src="image/hamming_distances_plot.jpeg" style="width:30%;">
 
 ## 4. **plot_network** Function
 ```bash
