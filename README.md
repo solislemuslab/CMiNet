@@ -11,6 +11,10 @@ The package employs a range of established algorithms, including Pearson and Spe
 - [Methods Included in CMiNet](#methods-included-in-cminet)
 - [Installation](#installation)
 - [Running CMiNet](#running)
+- [1. **CMiNet** Function] (#cmifun)
+- [2. **process_and_visualize_network** Function](#process)
+- [3. **plot_hamming_distances** Function] (#plot_hamming_distances)
+- [4.**plot_network** Function](#final)
 
 ## Methods Included in CMiNet
 Algorithms Applied in CMiNet:
@@ -67,9 +71,7 @@ We design the package that you can change the paramters of all algorithms based 
 - c_MI_params = list(quantitative = TRUE, q1 = 0.7, q2 = 0.95)
 - cclasso_params = list(counts = FALSE, pseudo = 0.5, k_cv = 3, lam_int = c(1e-4, 1), k_max = 20, n_boot = 20)
 ### Construct weighted network by CMiNet Function
-When the data is abundance matrix (Count value), set quantitative = TRUE, otherwise quantitative = FALSE.
-If you are interested to use some of these algorithms change TRUE to FALSE.
-TT is the value for thresold-depend algortihms, since we suppose that the microbiome network is sparce this value set as quantime 0.95. 
+Set quantitative = TRUE if the data is a count matrix; otherwise, use FALSE. Adjust TT for threshold-dependent algorithms, defaulted here to 0.95 for sparse microbiome networks.
 ```bash
 result <- CMiNet(
   data,
@@ -88,7 +90,7 @@ result <- CMiNet(
 )
 ```
 ## 2. **process_and_visualize_network** Function:
-We plotted weighted_network resulted by CMiNet Function based on 4 thresolds:
+Visualize the weighted network with different thresholds:
 
 ```bash
 weighted_network = result$weighted_network
@@ -103,12 +105,14 @@ process_and_visualize_network(weighted_network, taxa_names, thresholds, show_lab
 <img src="image/network_9,8,7,6.jpeg" style="width:90%;">
 
 ## 3. **plot_hamming_distances** Function
+Calculate and plot Hamming distances.
 ```bash
 plot_hamming_distances("Binary_Network", top_n_pairs = 10, output_filename = "hamming_distances_plot.jpeg")
 ```
 <img src="image/hamming_distances_plot.jpeg" style="width:90%;">
 
 ## 4. **plot_network** Function
+Generate a final network plot from the weighted network.
 ```bash
 score = 7
 WN = result$weighted_network
