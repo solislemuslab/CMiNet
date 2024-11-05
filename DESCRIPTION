@@ -1,0 +1,16 @@
+Package: CMiNet
+Type: Package
+Title: Constructing a Consensus Microbiome Network
+Version: 0.1.0
+Author: Rosa Aghdam <university of wisconsin madison>
+Maintainer: Rosa Aghdam <rosaaghdam@gmail.com>
+Description: This package provides methods for constructing a consensus microbiome network, 
+    addressing variability and reliability issues in microbiome network analysis. It integrates 
+    multiple algorithms to generate a weighted consensus network, which combines results from 
+    diverse methods to improve robustness in microbiome data interpretation.
+    Use four spaces when indenting paragraphs within the Description.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: huge,igraph,stats,SpiecEasi,SPRING,visNetwork,readr,ggplot2,gtools,WGCNA
+RoxygenNote: 7.3.2
