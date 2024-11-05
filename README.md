@@ -1,5 +1,5 @@
 ## CMiNet: Consensus Microbiome Network Algorithm
-<img src="image/logo.png" style="width:30%;" align=right>
+<img src="image/logo.png" style="width:20%;" align=right>
 
 ## Description
 CMiNet is an R package designed to generate consensus microbiome networks by integrating results from multiple network construction algorithms. This tool is specifically tailored for microbiome data, where capturing the intricate relationships between microbial taxa is essential to understanding complex biological systems and their impacts on health and disease.
