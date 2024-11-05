@@ -50,7 +50,7 @@ As an example, we run CMiNet Package on American Gut data:
 
 ## CMiNet Function
 ### loading the Data
-We use the American Gut data from [SpiecEasi package](https://github.com/zdk123/SpiecEasi)) to run CMiNet algorithm to construct consensus microbiome network. 
+We use the American Gut data from [SpiecEasi package](https://github.com/zdk123/SpiecEasi) to run CMiNet algorithm to construct consensus microbiome network. 
 
 First, load CMiNet and the American Gut Project data (included with the [SpiecEasi package](https://github.com/zdk123/SpiecEasi)), which is automatically loaded alongside CMiNet).
 ```bash
