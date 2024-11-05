@@ -133,7 +133,16 @@ plot_hamming_distances("Binary_Network", top_n_pairs = 10, output_filename = "ha
 <img src="image/hamming_distances_plot.jpeg" style="width:90%;">
 
 ## plot_network Function
-Generate a final network plot from the weighted network.
+- Description:
+The plot_network function generates a visual representation of the final consensus network by applying a score threshold. This threshold filters the network to display only the most significant edges, allowing users to examine the core structure of the microbiome network based on selected nodes and edges.
+
+- Parameters:
+  - network_final: A binarized network matrix derived from the weighted consensus network. The matrix is filtered based on a numeric Score     -     - threshold, where only edges with weights above this threshold are included.
+  - node_color: Specifies the color for nodes in the plot.
+  - edge_color: Specifies the color for edges in the plot.
+  - label_color: Specifies the color for node labels in the plot.
+- Returns:
+A plot displaying the final microbiome network, filtered by the score threshold. Nodes, edges, and labels are color-coded according to the specified parameters, providing a clear view of significant interactions within the network.
 ```bash
 score = 7
 WN = result$weighted_network
