@@ -104,7 +104,10 @@ process_and_visualize_network(weighted_network, taxa_names, thresholds, show_lab
 ```bash
 plot_hamming_distances("Binary_Network", top_n_pairs = 10, output_filename = "hamming_distances_plot.jpeg")
 ```
+<img src="image/hamming_distances_plot.jpeg" style="width:30%;" align=right>
+
 ## 4. **plot_network** Function
+```bash
 score = 7
 WN = result$weighted_network
 taxa_names <- taxa_name[, 2]
@@ -113,6 +116,7 @@ network_final <- ifelse(WN > score, 1, 0)
 network_final[lower.tri(network_final)] <- 0  # Only upper triangle will have non-zero values
 sum(network_final)
 plot_network(network_final, node_color = "skyblue", edge_color = "grey", label_color = "black")
+```
 
 
 
