@@ -23,7 +23,6 @@ Algorithms Applied in CMiNet:
 - gCoda ([R code on GitHub](https://github.com/huayingfang/gCoda))
 
 ## Installation
-# Required packages
 ```bash
 install.packages("devtools")
 devtools::install_github("rosaaghdam/CMiNet")
