@@ -100,7 +100,7 @@ node_colors <- c("white", "lightyellow",  "lightgreen","lightblue")  # Node colo
 edge_colors <- c("blue", "#9491D9", "#332288", "purple")  # Edge colors for each threshold
 process_and_visualize_network(weighted_network, taxa_names, thresholds, show_labels, node_colors, edge_colors)
 ```
-<img src="image/network_9,8,7,6.jpeg" style="width:60%;">
+<img src="image/network_9,8,7,6.jpeg" style="width:80%;">
 ## 3. **plot_hamming_distances** Function
 ```bash
 plot_hamming_distances("Binary_Network", top_n_pairs = 10, output_filename = "hamming_distances_plot.jpeg")
