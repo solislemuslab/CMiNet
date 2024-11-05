@@ -100,12 +100,12 @@ node_colors <- c("white", "lightyellow",  "lightgreen","lightblue")  # Node colo
 edge_colors <- c("blue", "#9491D9", "#332288", "purple")  # Edge colors for each threshold
 process_and_visualize_network(weighted_network, taxa_names, thresholds, show_labels, node_colors, edge_colors)
 ```
-<img src="image/network_9,8,7,6.jpeg" style="width:80%;">
+<img src="image/network_9,8,7,6.jpeg" style="width:90%;">
 ## 3. **plot_hamming_distances** Function
 ```bash
 plot_hamming_distances("Binary_Network", top_n_pairs = 10, output_filename = "hamming_distances_plot.jpeg")
 ```
-<img src="image/hamming_distances_plot.jpeg" style="width:60%;">
+<img src="image/hamming_distances_plot.jpeg" style="width:90%;">
 
 ## 4. **plot_network** Function
 ```bash
@@ -118,7 +118,7 @@ network_final[lower.tri(network_final)] <- 0  # Only upper triangle will have no
 sum(network_final)
 plot_network(network_final, node_color = "skyblue", edge_color = "grey", label_color = "black")
 ```
-<img src="image/network_plot.png" style="width:60%;">
+<img src="image/network_plot.png" style="width:90%;">
 
 
 
