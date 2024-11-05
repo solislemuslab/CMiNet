@@ -30,17 +30,21 @@ install.packages("devtools")
 devtools::install_github("rosaaghdam/CMiNet")
 ```
 
-## Running CMiNet
+## Running CMiNet Package
 
-CMiNet Package contains 4 main funcitons:
-- CMiNet: This function constructs a consensus network from microbiome data using multiple methods.
-- plot_hamming_distances: Calculates the Hamming distance, common edges, and number of edges
-for each pair of resulted network matrices
-- visualization: This function processes a weighted microbiome network and visualizes it across different thresholds. Each threshold represents a minimum edge weight required for inclusion in the network plot.
-- Vis_FinalNet: This function generates a network plot from a final network resulted by CMiNet.
+The CMiNet Package contains four main functions:
+
+1. **CMiNet**: This function constructs a consensus network from microbiome data using multiple methods.
+
+2. **visualization**: This function processes a weighted microbiome network and visualizes it across different thresholds. Each threshold represents a minimum edge weight required for inclusion in the network plot.
+
+3. **plot_hamming_distances**: Calculates the Hamming distance, common edges, and the number of edges for each pair of resulting network matrices.
+
+4. **Vis_FinalNet**: This function generates a network plot from a final network produced by CMiNet.
 
 As an example, we run CMiNet Package on American Gut data:
 
+## 1. **CMiNet** Function
 ### loading the Data
 We use the American Gut data from [SpiecEasi package](https://github.com/zdk123/SpiecEasi)) to run CMiNet algorithm to construct consensus microbiome network. 
 
@@ -83,7 +87,7 @@ result <- CMiNet(
   cclasso = list(enabled = TRUE,params=cclasso_params)
 )
 ```
-###Visualization
+## 2. **visualization** Function:
 We plotted weighted_network resulted by CMiNet Function based on 4 thresolds:
 
 ```bash
@@ -94,9 +98,9 @@ thresholds <- c(max(weighted_network)-1,max(weighted_network)-2,max(weighted_net
 show_labels <- c(FALSE, FALSE, FALSE, FALSE)  # Show taxa names (TRUE/FALSE) for each threshold
 node_colors <- c("white", "lightyellow",  "lightgreen","lightblue")  # Node colors for each threshold
 edge_colors <- c("blue", "#9491D9", "#332288", "purple")  # Edge colors for each threshold
-# Example usage for interactive visualization
 process_and_visualize_network(weighted_network, taxa_names, thresholds, show_labels, node_colors, edge_colors)
 ```
+
 
 
 
