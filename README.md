@@ -14,8 +14,8 @@ Ten Algorithms which are applied in CMiNet:
 Pearson coefficient (cor() from stats package)
 Spearman coefficient (cor() from stats package)
 Biweight Midcorrelation bicor() from WGCNA package
-SparCC (R code on GitHub)
-CCLasso (R code on GitHub)
+SparCC ([R code on GitHub](https://github.com/huayingfang/CCLasso/blob/master/R/SparCC.R))
+CCLasso ([R code on GitHub](https://github.com/huayingfang/CCLasso/tree/master))
 SpiecEasi (SpiecEasi package)
 SPRING (SPRING package)
 gCoda (R code on GitHub)
