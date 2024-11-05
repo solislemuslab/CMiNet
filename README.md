@@ -11,7 +11,7 @@ The package employs a range of established algorithms, including Pearson and Spe
 - [Methods Included in CMiNet](#methods-included-in-cminet)
 - [Installation](#installation)
 - [Running CMiNet Package](#Running-CMiNet-Package)
-- [1. CMiNet Function](#1.-CMiNet-Function)
+- [1.CMiNet Function](#1.CMiNet-Function)
 - [2. process_and_visualize_network Function](#process)
 - [3. plot_hamming_distances Function](#plot_hamming_distances)
 - [4. plot_network Function](#final)
@@ -48,7 +48,7 @@ The CMiNet Package contains four main functions:
 
 As an example, we run CMiNet Package on American Gut data:
 
-## 1. CMiNet Function
+## 1.CMiNet Function
 ### loading the Data
 We use the American Gut data from [SpiecEasi package](https://github.com/zdk123/SpiecEasi)) to run CMiNet algorithm to construct consensus microbiome network. 
 
