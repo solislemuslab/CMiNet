@@ -11,14 +11,14 @@ The package employs a range of established algorithms, including Pearson and Spe
 
 ## Methods Included in CMiNet
 Ten Algorithms which are applied in CMiNet:
-Pearson coefficient (cor() from stats package)
-Spearman coefficient (cor() from stats package)
-Biweight Midcorrelation bicor() from WGCNA package
-SparCC ([R code on GitHub](https://github.com/huayingfang/CCLasso/blob/master/R/SparCC.R))
-CCLasso ([R code on GitHub](https://github.com/huayingfang/CCLasso/tree/master))
-SpiecEasi (SpiecEasi package)
-SPRING (SPRING package)
-gCoda (R code on GitHub)
+- Pearson coefficient (cor() from stats package)
+- Spearman coefficient (cor() from stats package)
+- Biweight Midcorrelation bicor() from WGCNA package
+- SparCC ([R code on GitHub](https://github.com/huayingfang/CCLasso/blob/master/R/SparCC.R))
+- CCLasso ([R code on GitHub](https://github.com/huayingfang/CCLasso/tree/master))
+- SpiecEasi ([SpiecEasi package](https://github.com/zdk123/SpiecEasi))
+- SPRING ([SPRING package](https://github.com/GraceYoon/SPRING))
+- gCoda ([R code on GitHub](https://github.com/huayingfang/gCoda))
 
 ## Installation
 # Required packages
