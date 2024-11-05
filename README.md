@@ -12,9 +12,9 @@ The package employs a range of established algorithms, including Pearson and Spe
 - [Installation](#installation)
 - [Running CMiNet Package](#Running-CMiNet-Package)
 - [CMiNet Function](#CMiNet-Function)
-- [2. process_and_visualize_network Function](#process)
-- [3. plot_hamming_distances Function](#plot_hamming_distances)
-- [4. plot_network Function](#final)
+- [process_and_visualize_network Function](#process_and_visualize_network-Function)
+- [plot_hamming_distances Function](#plot_hamming_distances-Function)
+- [plot_network Function](#plot_network-Function)
 
 ## Methods Included in CMiNet
 Algorithms Applied in CMiNet:
@@ -89,7 +89,7 @@ result <- CMiNet(
   cclasso = list(enabled = TRUE,params=cclasso_params)
 )
 ```
-## 2. process_and_visualize_network Function:
+## process_and_visualize_network Function:
 Visualize the weighted network with different thresholds:
 
 ```bash
@@ -104,14 +104,14 @@ process_and_visualize_network(weighted_network, taxa_names, thresholds, show_lab
 ```
 <img src="image/network_9,8,7,6.jpeg" style="width:90%;">
 
-## 3. **plot_hamming_distances** Function
+## plot_hamming_distances Function
 Calculate and plot Hamming distances.
 ```bash
 plot_hamming_distances("Binary_Network", top_n_pairs = 10, output_filename = "hamming_distances_plot.jpeg")
 ```
 <img src="image/hamming_distances_plot.jpeg" style="width:90%;">
 
-## 4. **plot_network** Function
+## plot_network Function
 Generate a final network plot from the weighted network.
 ```bash
 score = 7
