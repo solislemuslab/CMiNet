@@ -53,7 +53,7 @@ taxa_name[, 1] <- colnames(data)
 taxa_name[, 2] <- 1:dim(data)[2]       
 colnames(taxa_name) <- c("original taxa", "taxa name in figures")
 ```
-# Define the parameter on all Algorithms
+### Define the parameter on all Algorithms
 We design the package that you can change the paramters of all algorithms based on your interest.
 sparcc_params = list(imax = 20, kmax = 10, alpha = 0.1, Vmin = 1e-4)
 spiecEasi_mb_params= list(method = 'mb', lambda.min.ratio = 1e-2, nlambda = 15, pulsar.params = list(rep.num = 20, ncores = 4))
@@ -62,7 +62,7 @@ spring_params = list(Rmethod = "original", quantitative = TRUE, ncores = 5, lamb
 gcoda_params = list(counts = FALSE, pseudo = 0.5, lambda.min.ratio = 1e-4, nlambda = 15, ebic.gamma = 0.5)
 c_MI_params = list(quantitative = TRUE, q1 = 0.7, q2 = 0.95)
 cclasso_params = list(counts = FALSE, pseudo = 0.5, k_cv = 3, lam_int = c(1e-4, 1), k_max = 20, n_boot = 20)
-# Construct weighted network by CMiNet Function
+### Construct weighted network by CMiNet Function
 When the data is abundance matrix (Count value), set quantitative = TRUE, otherwise quantitative = FALSE.
 If you are interested to use some of these algorithms change TRUE to FALSE.
 TT is the value for thresold-depend algortihms, since we suppose that the microbiome network is sparce this value set as quantime 0.95. 
@@ -83,5 +83,20 @@ result <- CMiNet(
   cclasso = list(enabled = TRUE,params=cclasso_params)
 )
 ```
+###Visualization
+We plotted weighted_network resulted by CMiNet Function based on 4 thresolds:
+
+```bash
+weighted_network = result$weighted_network
+taxa_names <- taxa_name[, 2]
+rownames(weighted_network) = colnames(weighted_network)=taxa_names
+thresholds <- c(max(weighted_network)-1,max(weighted_network)-2,max(weighted_network)-3,max(weighted_network)-4)  # Thresholds for visualization
+show_labels <- c(FALSE, FALSE, FALSE, FALSE)  # Show taxa names (TRUE/FALSE) for each threshold
+node_colors <- c("white", "lightyellow",  "lightgreen","lightblue")  # Node colors for each threshold
+edge_colors <- c("blue", "#9491D9", "#332288", "purple")  # Edge colors for each threshold
+# Example usage for interactive visualization
+process_and_visualize_network(weighted_network, taxa_names, thresholds, show_labels, node_colors, edge_colors)
+```
+
 
 
