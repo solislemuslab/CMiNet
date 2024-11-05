@@ -10,7 +10,7 @@ The package employs a range of established algorithms, including Pearson and Spe
 ## Table of Contents
 - [Methods Included in CMiNet](#methods-included-in-cminet)
 - [Installation](#installation)
-- [Running CMiNet Package](#running)
+- [Running CMiNet Package](#Running-CMiNet-Package)
 - [CMiNet Function](#cmifun)
 - [2. process_and_visualize_network Function](#process)
 - [3. plot_hamming_distances Function](#plot_hamming_distances)
