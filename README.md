@@ -48,7 +48,7 @@ The CMiNet Package contains four main functions:
 
 As an example, we run CMiNet Package on American Gut data:
 
-## CMiNet Function
+## 1. CMiNet Function
 ### loading the Data
 We use the American Gut data from [SpiecEasi package](https://github.com/zdk123/SpiecEasi)) to run CMiNet algorithm to construct consensus microbiome network. 
 
