@@ -1,4 +1,4 @@
-## CMiNet: Consensus Microbiome Network Algorithm
+ی## CMiNet: Consensus Microbiome Network Algorithm
 <img src="image/logo.png" style="width:30%;" align=right>
 
 ## Description
