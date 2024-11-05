@@ -37,5 +37,13 @@ First, load CMiNet and the American Gut Project data (included with the [SpiecEa
 library(CMiNet)
 data("amgut1.filt")
 ```
+CMiNet Package contains 4 main funcitons:
+- CMiNet: This function constructs a consensus network from microbiome data using multiple methods.
+- plot_hamming_distances: Calculates the Hamming distance, common edges, and number of edges
+for each pair of resulted network matrices
+- visualization: This function processes a weighted microbiome network and visualizes it across different thresholds. Each threshold represents a minimum edge weight required for inclusion in the network plot.
+- Vis_FinalNet: This function generates a network plot from a final network resulted by CMiNet.
 
+As an example, we run CMiNet Package on American Gut data:
+  
 
