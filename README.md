@@ -65,7 +65,7 @@ taxa_name[, 2] <- 1:dim(data)[2]
 colnames(taxa_name) <- c("original taxa", "taxa name in figures")
 ```
 ### Define the parameter on all Algorithms
-<div align="justify">
+
 We design the package that you can change the paramters of all algorithms based on your interest.
 - sparcc_params = list(imax = 20, kmax = 10, alpha = 0.1, Vmin = 1e-4)
 - spiecEasi_mb_params= list(method = 'mb', lambda.min.ratio = 1e-2, nlambda = 15, pulsar.params = list(rep.num = 20, ncores = 4))
@@ -87,7 +87,6 @@ We design the package that you can change the paramters of all algorithms based 
   - weighted_network: A weighted network matrix representing the consensus network.
   - edge_list: A matrix with three columns—first and second columns indicate node IDs, and the third column shows the edge weight values.
   - errors: Any errors from algorithms that could not run on the data, providing feedback for troubleshooting.
-</div>
 
 ```bash
 result <- CMiNet(
