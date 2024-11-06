@@ -47,8 +47,6 @@ The CMiNet Package contains four main functions:
 3. **plot_hamming_distances**: Calculates the Hamming distance, common edges, and the number of edges for each pair of resulting network matrices.
 
 4. **plot_network**: This function generates a network plot from a final network produced by CMiNet.
-
-As an example, we run CMiNet Package on American Gut data:
 </div>
 
 ## CMiNet Function
