@@ -4,7 +4,7 @@
 ## Description
 CMiNet is an R package designed to generate consensus microbiome networks by integrating results from multiple network construction algorithms. This tool is specifically tailored for microbiome data, where capturing the intricate relationships between microbial taxa is essential to understanding complex biological systems and their impacts on health and disease.
 
-The package employs a range of established algorithms, including Pearson and Spearman correlation, Biweight midcorrelation, Sparse Correlations for Compositional data (SparCC), Sparse InversE Covariance estimation for Ecological Association and Statistical Inference (SpiecEasi), Semi-Parametric Rank-based Correlation and Partial Correlation Estimation (SPRING), Generalized Co-Occurrence Differential Abundance analysis (GCODA), Correlation Inference for Compositional Data through Lasso (CCLasso), and a novel algorithm based on conditional mutual information. These algorithms construct individual microbial association networks, which CMiNet then combines into a single, weighted consensus network. By leveraging the strengths of each method, CMiNet provides a comprehensive and reliable representation of microbial interactions.
+The package employs a range of established algorithms, including Pearson and Spearman correlation, Biweight midcorrelation, Sparse Correlations for Compositional data (SparCC), Sparse InversE Covariance estimation for Ecological Association and Statistical Inference (SpiecEasi), Semi-Parametric Rank-based Correlation and Partial Correlation Estimation (SPRING), Generalized Co-Occurrence Differential Abundance analysis (gCoda), Correlation Inference for Compositional Data through Lasso (CCLasso), and a novel algorithm based on conditional mutual information (c_MI). These algorithms construct individual microbial association networks, which CMiNet then combines into a single, weighted consensus network. By leveraging the strengths of each method, CMiNet provides a comprehensive and reliable representation of microbial interactions.
 <img src="image/CMiNet-Page-2.jpg" style="width:50%;" align=right>
 ## Table of Contents
 - [Methods Included in CMiNet](#methods-included-in-cminet)
@@ -19,7 +19,7 @@ The package employs a range of established algorithms, including Pearson and Spe
 Algorithms Applied in CMiNet:
 - Pearson coefficient (cor() from stats package)
 - Spearman coefficient (cor() from stats package)
-- Biweight Midcorrelation bicor() from WGCNA package
+- Biweight Midcorrelation (bicor() from WGCNA package)
 - SparCC ([R code on GitHub](https://github.com/huayingfang/CCLasso/blob/master/R/SparCC.R))
 - CCLasso ([R code on GitHub](https://github.com/huayingfang/CCLasso/tree/master))
 - SpiecEasi ([SpiecEasi package](https://github.com/zdk123/SpiecEasi))
@@ -74,10 +74,10 @@ We design the package that you can change the paramters of all algorithms based 
 - Parameters:
   - data: The input microbiome abundance matrix, where rows represent samples and columns represent taxa.
   - quantitative (default = TRUE): Set to TRUE if the data contains quantitative abundance counts; set to FALSE otherwise.
-  - TT: The threshold value used for threshold-dependent algorithms (pearson,spearman,bicor,sparcc,and cclasso), set to the 0.95 quantile by default to promote sparsity in the consensus network.
+  - TT: The threshold value used for threshold-dependent algorithms (pearson,spearman,bicor,SparCC,and CCLasso), set to the 0.95 quantile by default to promote sparsity in the consensus network.
   - Algorithm-Specific Parameters:
     - pearson, spearman, bicor: Boolean flags to enable these correlation-based methods. When set to TRUE, the algorithm runs on the data; when set to FALSE, it is excluded from the analysis.
-    - sparcc, spiecEasi_mb, spiecEasi_glasso, spring, gcoda, c_MI, cclasso: Lists of parameters for each algorithm, allowing customization of settings such as number of cores (ncores), threshold values (lambda.min.ratio), and other algorithm-specific configurations. Setting the enabled parameter to TRUE for an algorithm will include it in the consensus network construction, while setting it to FALSE will skip the algorithm, allowing users to select a subset of methods for analysis.
+    - SparCC, SpiecEasi_mb, SpiecEasi_glasso, SPRING, gCoda, c_MI, CCLasso: Lists of parameters for each algorithm, allowing customization of settings such as number of cores (ncores), threshold values (lambda.min.ratio), and other algorithm-specific configurations. Setting the enabled parameter to TRUE for an algorithm will include it in the consensus network construction, while setting it to FALSE will skip the algorithm, allowing users to select a subset of methods for analysis.
 - Returns: A list containing:
   - weighted_network: A weighted network matrix representing the consensus network.
   - edge_list: A matrix with three columns—first and second columns indicate node IDs, and the third column shows the edge weight values.
