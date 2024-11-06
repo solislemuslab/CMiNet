@@ -153,7 +153,7 @@ The plot_network function generates a visual representation of the final consens
   - edge_color: Specifies the color for edges in the plot.
   - label_color: Specifies the color for node labels in the plot.
 - Returns:
-A plot displaying the final microbiome network, filtered by the score threshold. Nodes, edges, and labels are color-coded according to the specified parameters, providing a clear view of significant interactions within the network.
+A figure displaying the final microbiome network, filtered by the score threshold. Nodes, edges, and labels are color-coded according to the specified parameters, providing a clear view of significant interactions within the network.
 ```bash
 score = 7
 WN = result$weighted_network
