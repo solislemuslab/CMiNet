@@ -53,11 +53,9 @@ As an example, we run CMiNet Package on American Gut data:
 
 ## CMiNet Function
 ### loading the Data
-<div align="justify">
 We use the American Gut data from [SpiecEasi package](https://github.com/zdk123/SpiecEasi) to run CMiNet algorithm to construct consensus microbiome network. 
-
 First, load CMiNet and the American Gut Project data (included with the [SpiecEasi package](https://github.com/zdk123/SpiecEasi)), which is automatically loaded alongside CMiNet).
-</div>
+
 ```bash
 library(CMiNet)
 data("amgut1.filt")
@@ -90,6 +88,7 @@ We design the package that you can change the paramters of all algorithms based 
   - edge_list: A matrix with three columns—first and second columns indicate node IDs, and the third column shows the edge weight values.
   - errors: Any errors from algorithms that could not run on the data, providing feedback for troubleshooting.
 </div>
+
 ```bash
 result <- CMiNet(
   data,
