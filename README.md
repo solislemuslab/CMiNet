@@ -63,8 +63,7 @@ taxa_name[, 2] <- 1:dim(data)[2]
 colnames(taxa_name) <- c("original taxa", "taxa name in figures")
 ```
 ### Define the parameter on all Algorithms
-
-We design the package that you can change the paramters of all algorithms based on your interest.
+We designed the package to allow users to adjust the default parameters of each algorithm according to their preferences and specific research needs.
 - sparcc_params = list(imax = 20, kmax = 10, alpha = 0.1, Vmin = 1e-4)
 - spiecEasi_mb_params= list(method = 'mb', lambda.min.ratio = 1e-2, nlambda = 15, pulsar.params = list(rep.num = 20, ncores = 4))
 - spiecEasi_glasso_params =params = list(method = 'glasso', lambda.min.ratio = 1e-2, nlambda = 15, pulsar.params = list(rep.num = 50))
