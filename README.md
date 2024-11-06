@@ -8,6 +8,7 @@ CMiNet is an R package designed to generate consensus microbiome networks by int
 The package employs a range of established algorithms, including Pearson and Spearman correlation, Biweight midcorrelation, Sparse Correlations for Compositional data (SparCC), Sparse InversE Covariance estimation for Ecological Association and Statistical Inference (SpiecEasi), Semi-Parametric Rank-based Correlation and Partial Correlation Estimation (SPRING), Generalized Co-Occurrence Differential Abundance analysis (gCoda), Correlation Inference for Compositional Data through Lasso (CCLasso), and a novel algorithm based on conditional mutual information (c_MI). These algorithms construct individual microbial association networks, which CMiNet then combines into a single, weighted consensus network. By leveraging the strengths of each method, CMiNet provides a comprehensive and reliable representation of microbial interactions.
 </div>
 <img src="image/CMiNet-Page-2.jpg" style="width:50%;" align=right>
+
 ## Table of Contents
 - [Methods Included in CMiNet](#methods-included-in-cminet)
 - [Installation](#installation)
@@ -36,7 +37,7 @@ devtools::install_github("rosaaghdam/CMiNet")
 ```
 
 ## Running CMiNet Package
-
+<div align="justify">
 The CMiNet Package contains four main functions:
 
 1. **CMiNet**: This function constructs a consensus network from microbiome data using multiple methods.
@@ -48,12 +49,15 @@ The CMiNet Package contains four main functions:
 4. **plot_network**: This function generates a network plot from a final network produced by CMiNet.
 
 As an example, we run CMiNet Package on American Gut data:
+</div>
 
 ## CMiNet Function
 ### loading the Data
+<div align="justify">
 We use the American Gut data from [SpiecEasi package](https://github.com/zdk123/SpiecEasi) to run CMiNet algorithm to construct consensus microbiome network. 
 
 First, load CMiNet and the American Gut Project data (included with the [SpiecEasi package](https://github.com/zdk123/SpiecEasi)), which is automatically loaded alongside CMiNet).
+</div>
 ```bash
 library(CMiNet)
 data("amgut1.filt")
@@ -63,6 +67,7 @@ taxa_name[, 2] <- 1:dim(data)[2]
 colnames(taxa_name) <- c("original taxa", "taxa name in figures")
 ```
 ### Define the parameter on all Algorithms
+<div align="justify">
 We design the package that you can change the paramters of all algorithms based on your interest.
 - sparcc_params = list(imax = 20, kmax = 10, alpha = 0.1, Vmin = 1e-4)
 - spiecEasi_mb_params= list(method = 'mb', lambda.min.ratio = 1e-2, nlambda = 15, pulsar.params = list(rep.num = 20, ncores = 4))
@@ -84,7 +89,7 @@ We design the package that you can change the paramters of all algorithms based 
   - weighted_network: A weighted network matrix representing the consensus network.
   - edge_list: A matrix with three columns—first and second columns indicate node IDs, and the third column shows the edge weight values.
   - errors: Any errors from algorithms that could not run on the data, providing feedback for troubleshooting.
-
+</div>
 ```bash
 result <- CMiNet(
   data,
