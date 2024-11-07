@@ -41,14 +41,7 @@ In particular the automatic installation of SPRING and SpiecEasi (only available
 devtools::install_github("zdk123/SpiecEasi")
 devtools::install_github("GraceYoon/SPRING")
 ```
-If you have difficulty installing SpiecEasi, download the tar or zip file from this [link](https://github.com/zdk123/SpiecEasi/releases/tag/v1.1.1). Then, install it in R using the following command for the downloaded file type:
-
-```bash
-# For tar.gz file
-install.packages("path/to/SpiecEasi_1.1.1.tar.gz", repos = NULL, type = "source")
-# For zip file (on Windows)
-install.packages("path/to/SpiecEasi_1.1.1.zip", repos = NULL, type = "win.binary")
-```
+If you have difficulty installing SpiecEasi, download the tar or zip file from this [link](https://github.com/zdk123/SpiecEasi/releases/tag/v1.1.1). Then, install it in R.
 
 ## Running CMiNet Package
 <div align="justify">
