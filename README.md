@@ -3,6 +3,8 @@
 
 [![GitHub Releases](https://img.shields.io/github/v/release/solislemuslab/CMiNet?display_name=tag)](https://github.com/solislemuslab/CMiNet/releases)
 
+[![GitHub license](https://img.shields.io/github/license/solislemuslab/CMiNet?color=yellow)](https://github.com/solislemuslab/CMiNet/blob/main/LICENSE)
+
 ## Description
 <div align="justify">
 CMiNet is an R package designed to generate consensus microbiome networks by integrating results from multiple network construction algorithms. This tool is specifically tailored for microbiome data, where capturing the intricate relationships between microbial taxa is essential to understanding complex biological systems and their impacts on health and disease.
