@@ -33,7 +33,7 @@ Algorithms Applied in CMiNet:
 - CCLasso ([R code on GitHub](https://github.com/huayingfang/CCLasso/tree/master))
 - SpiecEasi ([SpiecEasi package](https://github.com/zdk123/SpiecEasi))
 - SPRING ([SPRING package](https://github.com/GraceYoon/SPRING))
-- CMI (Conditional Mutual Information-Based Microbiome Network Construction)
+- CMIMN ([CMIMN package](https://github.com/solislemuslab/CMIMN))
 - gCoda ([R code on GitHub](https://github.com/huayingfang/gCoda))
 
 ## Installation
