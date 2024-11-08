@@ -46,6 +46,15 @@ In particular the automatic installation of SPRING and SpiecEasi (only available
 ```bash
 devtools::install_github("zdk123/SpiecEasi@v1.1.1")
 devtools::install_github("GraceYoon/SPRING")
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install(c("AnnotationDbi", "GO.db", "preprocessCore", "impute"))
+library(AnnotationDbi)
+library(GO.db)
+library(preprocessCore)
+library(impute)
+library(SpiecEasi)
+library(SPRING)
 ```
 
 ## Running CMiNet Package
