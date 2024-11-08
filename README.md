@@ -44,10 +44,9 @@ devtools::install_github("rosaaghdam/CMiNet")
 If there are any errors during installation, please install the missing dependencies manually.
 In particular the automatic installation of SPRING and SpiecEasi (only available on GitHub) does sometimes not work. These packages can be installed as follows (the order is important because SPRING depends on SpiecEasi):
 ```bash
-devtools::install_github("zdk123/SpiecEasi")
+devtools::install_github("zdk123/SpiecEasi@v1.1.1")
 devtools::install_github("GraceYoon/SPRING")
 ```
-If you have difficulty installing SpiecEasi, download the tar or zip file from this [link](https://github.com/zdk123/SpiecEasi/releases/tag/v1.1.1). Then, install it in R.
 
 ## Running CMiNet Package
 <div align="justify">
