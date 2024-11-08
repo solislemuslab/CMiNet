@@ -39,7 +39,7 @@ Algorithms Applied in CMiNet:
 ## Installation
 ```bash
 install.packages("devtools")
-devtools::install_github("rosaaghdam/CMiNet")
+devtools::install_github("solislemuslab/CMiNet")
 ```
 If there are any errors during installation, please install the missing dependencies manually.
 In particular the automatic installation of SPRING and SpiecEasi (only available on GitHub) does sometimes not work. These packages can be installed as follows (the order is important because SPRING depends on SpiecEasi):
