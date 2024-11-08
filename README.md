@@ -68,7 +68,7 @@ First, load CMiNet and the American Gut Project data (included with the [SpiecEa
 
 ```bash
 library(CMiNet)
-data("amgut1.filt")
+data = amgut1.filt
 taxa_name <- matrix(0, nrow = dim(data)[2], ncol = 2)
 taxa_name[, 1] <- colnames(data)        
 taxa_name[, 2] <- 1:dim(data)[2]       
@@ -97,6 +97,16 @@ We designed the package to allow users to adjust the default parameters of each 
   - weighted_network: A weighted network matrix representing the consensus network.
   - edge_list: A matrix with three columns—first and second columns indicate node IDs, and the third column shows the edge weight values.
   - errors: Any errors from algorithms that could not run on the data, providing feedback for troubleshooting.
+```bash
+sparcc_params = list(imax = 20, kmax = 10, alpha = 0.1, Vmin = 1e-4)
+spiecEasi_mb_params= list(method = 'mb', lambda.min.ratio = 1e-2, nlambda = 15, pulsar.params = list(rep.num = 20, ncores = 4))
+spiecEasi_glasso_params =params = list(method = 'glasso', lambda.min.ratio = 1e-2, nlambda = 15, pulsar.params = list(rep.num = 50))
+spring_params = list(Rmethod = "original", quantitative = TRUE, ncores = 5, lambdaseq = "data-specific", nlambda = 15, rep.num = 20)
+gcoda_params = list(counts = FALSE, pseudo = 0.5, lambda.min.ratio = 1e-4, nlambda = 15, ebic.gamma = 0.5)
+c_MI_params = list(quantitative = TRUE, q1 = 0.7, q2 = 0.95)
+cclasso_params = list(counts = FALSE, pseudo = 0.5, k_cv = 3, lam_int = c(1e-4, 1), k_max = 20, n_boot = 20)
+```
+
 
 ```bash
 result <- CMiNet(
