@@ -200,6 +200,7 @@ You can print the original taxa name by:
 ```bash
 print(taxaname)
 ```
+
 ## Reporting Issues and Asking Questions
 
 If you encounter a bug, experience a failed function, or have a feature request, please open an issue in the GitHub [issue tracker](https://github.com/solislemuslab/CMiNet/issues). 
