@@ -196,12 +196,12 @@ sum(network_final)
 plot_network(network_final, node_color = "skyblue", edge_color = "grey", label_color = "black")
 ```
 <img src="image/network_plot.png" style="width:70%;">
-
+<img src="image/taxaname.png" style="width:13%;" align=right>
 You can print the original taxa name by:
 ```bash
 print(taxaname)
 ```
-<img src="image/taxaname.png" style="width:13%;" align=right>
+
 ## Reporting Issues and Asking Questions
 
 If you encounter a bug, experience a failed function, or have a feature request, please open an issue in the GitHub [issue tracker](https://github.com/solislemuslab/CMiNet/issues). 
