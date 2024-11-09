@@ -81,7 +81,7 @@ data = amgut1.filt
 taxa_name <- matrix(0, nrow = dim(data)[2], ncol = 2)
 taxa_name[, 1] <- colnames(data)        
 taxa_name[, 2] <- 1:dim(data)[2]       
-colnames(taxa_name) <- c("original taxa", "taxa name in figures")
+colnames(taxa_name) <- c("original", "figures_name")
 ```
 ### Define the parameter on all Algorithms
 We designed the package to allow users to adjust the default parameters of each algorithm according to their preferences and specific research needs.
@@ -197,6 +197,37 @@ plot_network(network_final, node_color = "skyblue", edge_color = "grey", label_c
 ```
 <img src="image/network_plot.png" style="width:90%;">
 
+You can print the original taxa name by:
+```bash
+print(taxaname)
+```
+## Reporting Issues and Asking Questions
+
+If you encounter a bug, experience a failed function, or have a feature request, please open an issue in the GitHub [issue tracker](https://github.com/solislemuslab/CMiNet/issues). 
+
+## License
+
+CMIMN is licensed under the [GNU General Public License v3.0 (GPL-3)](https://www.gnu.org/licenses/gpl-3.0.html). &copy; Solis-Lemus Lab (2024).
+
+
+## Citation
+
+If you use CMiNet in your work, we kindly ask that you cite the following paper:
+
+```bibtex
+@article{aghdam2024,
+  year = {2024},
+  publisher = {In process},
+  author = {Rosa Aghdam, Shan Shan, Richard Lankau and Claudia Solis-Lemus},
+  title = {Leveraging Machine Learning and Enhanced Network-based methods in Potato Disease Interactions}
+}
+@article{aghdam2024_2,
+  year = {2024},
+  publisher = {In process},
+  author = {Rosa Aghdam and Claudia Solis-Lemus},
+  title = {CMiNet: R package for learning the Consensus Microbiome Network}
+} 
+```
 
 
 
