@@ -198,7 +198,7 @@ plot_network(network_final, node_color = "skyblue", edge_color = "grey", label_c
 <img src="image/figurefinal.jpg" style="width:70%;">
 
 
-You can print the original taxa name by:
+You can print the original and formatted taxa names using the following command:
 ```bash
 print(taxaname)
 ```
