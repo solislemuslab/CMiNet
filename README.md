@@ -195,8 +195,9 @@ network_final[lower.tri(network_final)] <- 0  # Only upper triangle will have no
 sum(network_final)
 plot_network(network_final, node_color = "skyblue", edge_color = "grey", label_color = "black")
 ```
-<img src="image/network_plot.png" style="width:70%;">
-<img src="image/taxaname.png" style="width:13%;" align=right>
+<img src="image/figurefinal.jpg" style="width:70%;">
+
+
 You can print the original taxa name by:
 ```bash
 print(taxaname)
