@@ -196,6 +196,7 @@ sum(network_final)
 plot_network(network_final, node_color = "skyblue", edge_color = "grey", label_color = "black")
 ```
 <img src="image/network_plot.png" style="width:70%;">
+
 You can print the original taxa name by:
 ```bash
 print(taxaname)
