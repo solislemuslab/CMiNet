@@ -194,7 +194,7 @@ A figure displaying the final microbiome network, filtered by the score threshol
 WN = result$weighted_network
 taxa_names <- taxa_name[, 2]
 rownames(WN) = colnames(WN)=taxa_names
-score = max(WN)-2
+score = max(WN)-3
 network_final <- ifelse(WN > score, 1, 0)
 network_final[lower.tri(network_final)] <- 0  # Only upper triangle will have non-zero values
 sum(network_final)
