@@ -81,6 +81,8 @@ We use the American Gut data from [SpiecEasi package](https://github.com/zdk123/
 First, load CMiNet and the American Gut Project data (included with the [SpiecEasi package](https://github.com/zdk123/SpiecEasi)), which is automatically loaded alongside CMiNet).
 
 ```bash
+library(SpiecEasi)
+library(SPRING)
 library(CMiNet)
 data = amgut1.filt
 taxa_name <- matrix(0, nrow = dim(data)[2], ncol = 2)
