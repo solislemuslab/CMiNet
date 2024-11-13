@@ -18,6 +18,7 @@ The package employs a range of established algorithms, including Pearson and Spe
 ## Table of Contents
 - [Methods Included in CMiNet](#methods-included-in-cminet)
 - [Installation](#installation)
+- [Important Setup Information](Important-Setup-Information)
 - [Running CMiNet Package](#Running-CMiNet-Package)
   - [CMiNet Function](#CMiNet-Function)
   - [process_and_visualize_network Function](#process_and_visualize_network-Function)
@@ -56,6 +57,10 @@ library(impute)
 library(SpiecEasi)
 library(SPRING)
 ```
+## Important Setup Information
+
+To ensure all output files and figures are saved automatically and organized properly, we recommend opening a new R project. This setup will help organize the generated files, as CMiNet will automatically save figures and outputs in the current working directory. If you prefer to specify a different path for saving the output (e.g., the Binary_network files), you can manually set the path in your code.
+
 
 ## Running CMiNet Package
 <div align="justify">
@@ -186,10 +191,10 @@ The plot_network function generates a visual representation of the final consens
 - Returns:
 A figure displaying the final microbiome network, filtered by the score threshold. Nodes, edges, and labels are color-coded according to the specified parameters, providing a clear view of significant interactions within the network.
 ```bash
-score = 7
 WN = result$weighted_network
 taxa_names <- taxa_name[, 2]
 rownames(WN) = colnames(WN)=taxa_names
+score = max(WN)-2
 network_final <- ifelse(WN > score, 1, 0)
 network_final[lower.tri(network_final)] <- 0  # Only upper triangle will have non-zero values
 sum(network_final)
