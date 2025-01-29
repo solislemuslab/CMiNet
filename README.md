@@ -112,7 +112,7 @@ We designed the package to allow users to adjust the default parameters of each 
     - Setting the enabled parameter to TRUE for an algorithm will include it in the consensus network construction, while setting it to FALSE will skip the algorithm, allowing users to select a subset of methods for analysis.
 - Returns: A list containing:
   - weighted_network: A weighted network matrix representing the consensus network.
-  - edge_list: A matrix with three columns—first and second columns indicate node IDs, and the third column shows the edge weight values.
+  - edge_list: edge_list: A matrix with four columns—the first and second columns indicate node IDs, the third column represents the edge weight values, and the fourth column specifies the name of the method that confirmed the appearance of the edge.
   - errors: Any errors from algorithms that could not run on the data, providing feedback for troubleshooting.
 ```bash
 sparcc_params = list(imax = 20, kmax = 10, alpha = 0.1, Vmin = 1e-4)
