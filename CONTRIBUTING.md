@@ -26,6 +26,9 @@ If you still cannot find an answer, open a new GitHub issue. We will respond as 
 To make contributions to CMiNet, you need to have a GitHub account and submit your change(s) via a **pull request** against the `development` branch from a non-`development` branch in your fork.  
 Using a separate branch will make it easier to collaborate and review changes.
 
+## Add a new algorithm to **CMiNet**.
+Add a new algorithm by creating a small wrapper in R/ (e.g., R/run_newalgo.R) modeled on existing files like gcoda.R or cclasso.R; the function should accept CMiNet’s standard inputs (data, quantitative, ...) and return a symmetric taxa×taxa adjacency matrix with a zero diagonal and taxa names. Then register it in R/CMiNet.R by (i) adding newalgo = list(enabled = FALSE, params = list()) to the CMiNet() argument list and (ii) calling run_newalgo(...) inside CMiNet() and storing the result as method_results[["newalgo"]] (plus a short metadata entry for category/citation). If your method needs a package, add it to DESCRIPTION under Imports; optionally expose parameters in the Shiny app (follow the patterns in Vis_FinalNet.R / visualization.R). Please include roxygen2 docs with @references, a minimal tests/testthat/test-newalgo.R (matrix shape, symmetry, zero diagonal), run devtools::document() and devtools::check(), and submit a pull request.
+
 ### Steps for contributing:
 1. **Fork** the CMiNet repository to your GitHub account.  
 2. **Clone** your fork locally:  
