@@ -215,7 +215,7 @@ The bootstrap workflow is **not currently included in the public CMiNet pacakge 
 
 On higher-capacity hardware, the full bootstrap analysis could be performed interactively without difficulty.
 
-For now, we provide the workflow as a **standalone R script** in the `R/` folder. Users can run it offline with control over the key parameters:
+For now, we provide the workflow as a **standalone R script** in the `cminet_bootstrap.R` file. Users can run it offline with control over the key parameters:
 
 - **B**: number of bootstrap replicates  
 - **m0**: within-replicate support threshold  
