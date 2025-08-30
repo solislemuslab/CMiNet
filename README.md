@@ -210,6 +210,21 @@ You can print the original and formatted taxa names using the following command:
 ```bash
 print(taxaname)
 ```
+## Notes on CMiNet Integration 
+The bootstrap workflow is **not currently included in the public CMiNet pacakge and Shiny app** because of runtime constraints on our server. Running many bootstrap replicates interactively would exceed available compute capacity and make the app unresponsive.
+
+On higher-capacity hardware, the full bootstrap analysis could be performed interactively without difficulty.
+
+For now, we provide the workflow as a **standalone R script** in the `R/` folder. Users can run it offline with control over the key parameters:
+
+- **B**: number of bootstrap replicates  
+- **m0**: within-replicate support threshold  
+- **m\***: frequency threshold on the original data  
+- **c\***: bootstrap confidence threshold  
+
+This script produces edge-level reproducibility measures and joint filtering results, consistent with the consensus rule described in the manuscript.
+
+We plan to include **native Shiny app integration in CMiNet v2**, once sufficient computing resources are available.
 
 ## Reporting Issues and Asking Questions
 
