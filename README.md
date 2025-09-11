@@ -251,7 +251,74 @@ If you use CMiNet in your work, we kindly ask that you cite the following paper:
   publisher = {In process},
   author = {Rosa Aghdam and Claudia Solis-Lemus},
   title = {CMiNet: R package for learning the Consensus Microbiome Network}
-} 
+}
+
+#SpiecEasi
+@article{kurtz2015sparse,
+  title={Sparse and compositionally robust inference of microbial ecological networks},
+  author={Kurtz, Zachary D and M{\"u}ller, Christian L and Miraldi, Emily R and Littman, Dan R and Blaser, Martin J and Bonneau, Richard A},
+  journal={PLoS computational biology},
+  volume={11},
+  number={5},
+  pages={e1004226},
+  year={2015},
+  publisher={Public Library of Science San Francisco, CA USA}
+}
+#SPRING
+@article{yoon2019microbial,
+  title={Microbial networks in SPRING-Semi-parametric rank-based correlation and partial correlation estimation for quantitative microbiome data},
+  author={Yoon, Grace and Gaynanova, Irina and M{\"u}ller, Christian L},
+  journal={Frontiers in genetics},
+  volume={10},
+  pages={516},
+  year={2019},
+  publisher={Frontiers Media SA}
+}
+#gCoda
+@article{fang2017gcoda,
+  title={gCoda: conditional dependence network inference for compositional data},
+  author={Fang, Huaying and Huang, Chengcheng and Zhao, Hongyu and Deng, Minghua},
+  journal={Journal of Computational Biology},
+  volume={24},
+  number={7},
+  pages={699--708},
+  year={2017},
+  publisher={Mary Ann Liebert, Inc. 140 Huguenot Street, 3rd Floor New Rochelle, NY 10801 USA}
+}
+#CCLasso
+@article{fang2015cclasso,
+  title={{CCLasso}: correlation inference for compositional data through Lasso},
+  author={Fang, Huaying and Huang, Chengcheng and Zhao, Hongyu and Deng, Minghua},
+  journal={Bioinformatics},
+  volume={31},
+  number={19},
+  pages={3172--3180},
+  year={2015},
+  publisher={Oxford University Press}
+}
+#NetCoMi
+
+@article{peschel2021netcomi,
+  title={NetCoMi: network construction and comparison for microbiome data in R},
+  author={Peschel, Stefanie and M{\"u}ller, Christian L and Von Mutius, Erika and Boulesteix, Anne-Laure and Depner, Martin},
+  journal={Briefings in bioinformatics},
+  volume={22},
+  number={4},
+  pages={bbaa290},
+  year={2021},
+  publisher={Oxford University Press}
+}
+#SPARCC
+@article{friedman2012inferring,
+  title={Inferring correlation networks from genomic survey data},
+  author={Friedman, Jonathan and Alm, Eric J},
+  journal={PLoS computational biology},
+  volume={8},
+  number={9},
+  pages={e1002687},
+  year={2012},
+  publisher={Public Library of Science}
+}
 ```
 
 
