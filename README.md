@@ -246,13 +246,13 @@ If you use CMiNet in your work, we kindly ask that you cite the following paper:
   author = {Rosa Aghdam, Shan Shan, Richard Lankau and Claudia Solis-Lemus},
   title = {Leveraging Machine Learning and Enhanced Network-based methods in Potato Disease Interactions}
 }
+#CMIMN
 @article{aghdam2024_2,
   year = {2024},
   publisher = {In process},
   author = {Rosa Aghdam and Claudia Solis-Lemus},
   title = {CMiNet: R package for learning the Consensus Microbiome Network}
 }
-
 #SpiecEasi
 @article{kurtz2015sparse,
   title={Sparse and compositionally robust inference of microbial ecological networks},
@@ -297,7 +297,6 @@ If you use CMiNet in your work, we kindly ask that you cite the following paper:
   publisher={Oxford University Press}
 }
 #NetCoMi
-
 @article{peschel2021netcomi,
   title={NetCoMi: network construction and comparison for microbiome data in R},
   author={Peschel, Stefanie and M{\"u}ller, Christian L and Von Mutius, Erika and Boulesteix, Anne-Laure and Depner, Martin},
