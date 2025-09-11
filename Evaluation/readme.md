@@ -1,5 +1,5 @@
 ## Directory structure
-
+R code to generate all figures in our bioRxiv preprint — “CMiNet: An R Package and User-Friendly Shiny App for Constructing Consensus Microbiome Networks” 
 ```text
 Evaluation/
 ├─ Git_Gut/
