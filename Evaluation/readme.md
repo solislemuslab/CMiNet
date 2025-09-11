@@ -15,12 +15,12 @@ Evaluation/
 │  │  └─ sample_result_allmethod/      # precomputed outputs (RData/CSV)
 │  ├─ evaluation_conditional_gut/      # conditional-dependence variant (gut)
 │  │  ├─ 01_run_cminet_on_bootstraps_conditional.R
-│  │  └─ 02_eval_bootstrap_thresholds_conditional.R
-│  │  ├─ sample_result_conditional_gut   # precomputed outputs (RData/CSV)
+│  │  ├─ 02_eval_bootstrap_thresholds_conditional.R
+│  │  └─ sample_result_conditional_gut/   # precomputed outputs (RData/CSV)
 │  └─ evaluation_correlation_gut/      # correlation-only variant (gut)
 │     ├─ 01_run_cminet_on_bootstraps_correlation.R
-│     └─ 02_eval_bootstrap_thresholds_correlation.R
-│  │  ├─ sample_result_conditional_gut   # precomputed outputs (RData/CSV)
+│     ├─ 02_eval_bootstrap_thresholds_correlation.R
+│     └─ sample_result_correlation_gut/   # precomputed outputs (RData/CSV)
 │
 ├─ Git_Soil/
 │  ├─ evaluation_all/                  # consensus (all methods) – soil data
@@ -30,7 +30,7 @@ Evaluation/
 │  │  ├─ 05_plot_bootstrap_consensus_heatmap.R
 │  │  ├─ 06_Jeffreys_CIs.R
 │  │  ├─ 4-Bootstrap-based edge confidence.R
-│  │  ├─ Figure_boxplot/ (same structure as gut)
+│  │  ├─ Figure_boxplot/               # same structure as gut
 │  │  └─ sample_result_allmethod/
 │  ├─ evaluation_conditional_soil/
 │  │  ├─ 01_run_cminet_on_bootstraps_conditional.R
