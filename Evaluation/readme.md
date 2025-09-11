@@ -1,3 +1,6 @@
+## Directory structure
+
+```text
 Evaluation/
 ├─ Git_Gut/
 │  ├─ evaluation_all/                  # consensus (all methods) – gut data
