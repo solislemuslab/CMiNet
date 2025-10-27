@@ -5,7 +5,7 @@
 [![GitHub Issues](https://img.shields.io/github/issues/solislemuslab/CMiNet)](https://github.com/solislemuslab/CMiNet/issues)
 ![Code Size](https://img.shields.io/github/languages/code-size/solislemuslab/CMiNet?color=white)
 [![GitHub Releases](https://img.shields.io/github/v/release/solislemuslab/CMiNet?display_name=tag)](https://github.com/solislemuslab/CMiNet/releases)
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17459775.svg)](https://doi.org/10.5281/zenodo.17459775)
 
 ## Description
 <div align="justify">
