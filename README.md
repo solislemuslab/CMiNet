@@ -85,6 +85,7 @@ First, load CMiNet and the American Gut Project data (included with the [SpiecEa
 library(SpiecEasi)
 library(SPRING)
 library(CMiNet)
+data("amgut1.filt")
 data = amgut1.filt
 taxa_name <- matrix(0, nrow = dim(data)[2], ncol = 2)
 taxa_name[, 1] <- colnames(data)        
