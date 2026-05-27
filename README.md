@@ -241,22 +241,26 @@ CMIMN is licensed under the [GNU General Public License v3.0 (GPL-3)](https://ww
 If you use CMiNet in your work, we kindly ask that you cite the following paper:
 
 ```bibtex
-@article{aghdam2025cminet,
-  title={CMiNet: An R Package and User-Friendly Shiny App for Constructing Consensus Microbiome Networks},
+@article{aghdam2026cminet,
+  title={CMiNet: An R package and user-friendly Shiny App for constructing consensus microbiome networks},
   author={Aghdam, Rosa and Sol{\'\i}s-Lemus, Claudia},
-  journal={bioRxiv},
-  pages={2025--05},
-  year={2025},
-  publisher={Cold Spring Harbor Laboratory}
+  journal={Methods in Ecology and Evolution},
+  volume={17},
+  number={1},
+  pages={52--66},
+  year={2026},
+  publisher={Wiley Online Library}
 }
 #CMIMN
-@article{aghdam2025leveraging,
-  title={Leveraging Bayesian Networks for Consensus Network Construction and Multi-Method Feature Selection to Decode Disease Prediction},
-  author={Aghdam, Rosa and Shan, Shan and Lankau, Richard and Solis-Lemus, Claudia},
-  journal={bioRxiv},
-  pages={2025--04},
-  year={2025},
-  publisher={Cold Spring Harbor Laboratory}
+@article{aghdam2026hybrid,
+  title={A hybrid framework for disease biomarker discovery in microbiome research combining Bayesian networks, machine learning, and network-based methods},
+  author={Aghdam, Rosa and Shan, Shan and Lankau, Richard and Sol{\'\i}s-Lemus, Claudia},
+  journal={Biology Methods and Protocols},
+  volume={11},
+  number={1},
+  pages={bpaf089},
+  year={2026},
+  publisher={Oxford University Press}
 }
 #SpiecEasi
 @article{kurtz2015sparse,
